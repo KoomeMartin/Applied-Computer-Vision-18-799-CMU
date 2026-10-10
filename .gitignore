@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives (submission bundles; sources live in the project folders)
+*.zip
