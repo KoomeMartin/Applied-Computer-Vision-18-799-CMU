@@ -18,11 +18,12 @@
 
 A three-stage tool chain where each script hands its output to the next:
 
-```mermaid
-flowchart LR
-    A["capture.py<br/>live chessboard detection<br/>SPACE saves valid frames"] -->|"calib_images/*.jpg"| B["calibrate.py<br/>sub-pixel corners and<br/>Zhang calibration"]
-    B -->|"calibration.yaml (K, dist, RMS)"| C["aruco_pose.py<br/>marker detection and<br/>solvePnP, 6-DoF overlay"]
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
+    <img src="assets/pipeline.svg" alt="capture.py to calibrate.py to aruco_pose.py pipeline" width="100%">
+  </picture>
+</p>
 
 1. **`capture.py`**: streams the webcam, runs `findChessboardCorners` on every frame and only lets you save a frame (SPACE) once the full 9×7 grid is found, so no unusable views end up in the dataset.
 2. **`calibrate.py`**: builds the metric 3D grid (Z = 0 plane, 16.5 mm pitch), refines every corner to sub-pixel accuracy (`cornerSubPix`, 11×11 window, 30 iterations / ε = 0.001), runs Zhang's method through `cv2.calibrateCamera` with the 5-term Brown–Conrady model, grades the RMS error and writes `calibration.yaml`.

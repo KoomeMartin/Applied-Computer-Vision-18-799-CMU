@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="110" viewBox="0 0 1040 110" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6e7681"/></marker></defs>
+<line x1="188" y1="55.0" x2="220" y2="55.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="398" y1="55.0" x2="430" y2="55.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="608" y1="55.0" x2="640" y2="55.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="818" y1="55.0" x2="850" y2="55.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<rect x="12" y="12" width="176" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="12" y="22" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="102.0" y="51.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">01 Calibration</text>
+<text x="102.0" y="70.0" text-anchor="middle" font-size="12.5" fill="#9198a1">K, distortion, pose</text>
+<rect x="222" y="12" width="176" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="222" y="22" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="312.0" y="51.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">02 Image formation</text>
+<text x="312.0" y="70.0" text-anchor="middle" font-size="12.5" fill="#9198a1">projection, rendering</text>
+<rect x="432" y="12" width="176" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="432" y="22" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="522.0" y="42.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">03 Features</text>
+<text x="522.0" y="61.0" text-anchor="middle" font-size="12.5" fill="#9198a1">edges, Hough,</text>
+<text x="522.0" y="80.0" text-anchor="middle" font-size="12.5" fill="#9198a1">watershed, FFT</text>
+<rect x="642" y="12" width="176" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="642" y="22" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="732.0" y="42.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">04 Homography AR</text>
+<text x="732.0" y="61.0" text-anchor="middle" font-size="12.5" fill="#9198a1">matching, RANSAC,</text>
+<text x="732.0" y="80.0" text-anchor="middle" font-size="12.5" fill="#9198a1">warping</text>
+<rect x="852" y="12" width="176" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="852" y="22" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="942.0" y="42.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">05 Vision Transformer</text>
+<text x="942.0" y="61.0" text-anchor="middle" font-size="12.5" fill="#9198a1">attention-based</text>
+<text x="942.0" y="80.0" text-anchor="middle" font-size="12.5" fill="#9198a1">recognition</text>
+</svg>

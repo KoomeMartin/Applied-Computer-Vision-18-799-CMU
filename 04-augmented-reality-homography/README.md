@@ -34,15 +34,12 @@ $$
 
 The non-trivial solution is the right singular vector of A with the smallest singular value.
 
-```mermaid
-flowchart LR
-    A["Correspondences<br/>x1 and x2"] --> B["Normalise<br/>centroid to origin,<br/>max dist sqrt(2)"]
-    B --> C["RANSAC x2000<br/>random 4-point DLT"]
-    C --> D{"reprojection error<br/>below 5 px?"}
-    D -->|count inliers| C
-    C --> E["Refit DLT on<br/>best inlier set"]
-    E --> F["De-normalise<br/>H = T1^-1 H~ T2"]
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ransac_pipeline-dark.svg">
+    <img src="assets/ransac_pipeline.svg" alt="Normalised DLT with RANSAC pipeline" width="100%">
+  </picture>
+</p>
 
 - **`computeH`:** stacks all $A_i$, then SVD, giving $\mathbf{h} = \mathbf{v}_9$.
 - **`computeH_norm`:** Hartley normalisation. Translating each point set to its centroid and scaling the max distance to √2 makes the SVD numerically well-conditioned.

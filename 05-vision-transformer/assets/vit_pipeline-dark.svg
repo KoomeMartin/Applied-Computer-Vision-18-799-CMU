@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="944" height="252" viewBox="0 0 944 252" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6e7681"/></marker></defs>
+<line x1="212" y1="55.0" x2="250" y2="55.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="452" y1="55.0" x2="490" y2="55.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="692" y1="55.0" x2="730" y2="55.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="832.0" y1="98" x2="832.0" y2="152" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="732" y1="197.0" x2="694" y2="197.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="492" y1="197.0" x2="454" y2="197.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="252" y1="197.0" x2="214" y2="197.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<rect x="12" y="12" width="200" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="12" y="22" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="114.0" y="51.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">Image</text>
+<text x="114.0" y="70.0" text-anchor="middle" font-size="12.5" fill="#9198a1">(B, 3, 224, 224)</text>
+<rect x="252" y="12" width="200" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="252" y="22" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="354.0" y="51.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">16x16 patches</text>
+<text x="354.0" y="70.0" text-anchor="middle" font-size="12.5" fill="#9198a1">(B, 196, 768)</text>
+<rect x="492" y="12" width="200" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="492" y="22" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="594.0" y="51.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">Linear embedding</text>
+<text x="594.0" y="70.0" text-anchor="middle" font-size="12.5" fill="#9198a1">(B, 196, 768)</text>
+<rect x="732" y="12" width="200" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="732" y="22" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="834.0" y="51.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">Prepend [CLS]</text>
+<text x="834.0" y="70.0" text-anchor="middle" font-size="12.5" fill="#9198a1">(B, 197, 768)</text>
+<rect x="732" y="154" width="200" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="732" y="164" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="834.0" y="193.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">+ positional emb.</text>
+<text x="834.0" y="212.0" text-anchor="middle" font-size="12.5" fill="#9198a1">learned, (B, 197, 768)</text>
+<rect x="492" y="154" width="200" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="492" y="164" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="594.0" y="193.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">Encoder block x6</text>
+<text x="594.0" y="212.0" text-anchor="middle" font-size="12.5" fill="#9198a1">Pre-LN MHSA + FFN</text>
+<rect x="252" y="154" width="200" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="252" y="164" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="354.0" y="193.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">[CLS] output</text>
+<text x="354.0" y="212.0" text-anchor="middle" font-size="12.5" fill="#9198a1">(B, 768)</text>
+<rect x="12" y="154" width="200" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="12" y="164" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="114.0" y="193.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">MLP head + softmax</text>
+<text x="114.0" y="212.0" text-anchor="middle" font-size="12.5" fill="#9198a1">(B, 2)</text>
+</svg>

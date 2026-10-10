@@ -55,13 +55,12 @@ This repository collects my work for **Applied Computer Vision**. Each project i
 
 ## Learning path
 
-```mermaid
-flowchart LR
-    L1["01 Camera calibration<br/>K, distortion, pose"] --> A1["02 Image formation<br/>projection and rendering"]
-    A1 --> A2["03 Features and segmentation<br/>edges, Hough, watershed, FFT"]
-    A2 --> A3["04 Homographies and AR<br/>matching, RANSAC, warping"]
-    A3 --> V["05 Vision Transformer<br/>attention-based recognition"]
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/learning_path-dark.svg">
+    <img src="assets/learning_path.svg" alt="Learning path: calibration, image formation, features, homography AR, Vision Transformer" width="100%">
+  </picture>
+</p>
 
 The projects build on each other. Calibration gives the camera model. Image formation uses it to render 3D data. Classical features detect structure. Homographies combine features and geometry into AR. Learned representations (ViT) close the loop on recognition.
 

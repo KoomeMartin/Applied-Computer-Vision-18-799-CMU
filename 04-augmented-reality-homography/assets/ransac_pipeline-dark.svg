@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="144" viewBox="0 0 1050 144" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6e7681"/></marker></defs>
+<line x1="190" y1="89.0" x2="222" y2="89.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="402" y1="89.0" x2="434" y2="89.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="614" y1="89.0" x2="646" y2="89.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<line x1="826" y1="89.0" x2="858" y2="89.0" stroke="#6e7681" stroke-width="2" marker-end="url(#a)"/>
+<path d="M491.0,46 C491.0,12 559.0,12 559.0,48" fill="none" stroke="#58a6ff" stroke-width="2" marker-end="url(#a)"/>
+<text x="569.0" y="30" font-size="12.5" fill="#58a6ff">repeat x2000</text>
+<rect x="12" y="46" width="178" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="12" y="56" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="103.0" y="76.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">Correspondences</text>
+<text x="103.0" y="95.0" text-anchor="middle" font-size="12.5" fill="#9198a1">FAST + BRIEF matches</text>
+<text x="103.0" y="114.0" text-anchor="middle" font-size="12.5" fill="#9198a1">x1 &lt;-&gt; x2</text>
+<rect x="224" y="46" width="178" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="224" y="56" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="315.0" y="76.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">Normalise</text>
+<text x="315.0" y="95.0" text-anchor="middle" font-size="12.5" fill="#9198a1">centroid to origin</text>
+<text x="315.0" y="114.0" text-anchor="middle" font-size="12.5" fill="#9198a1">max distance sqrt(2)</text>
+<rect x="436" y="46" width="178" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="436" y="56" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="527.0" y="76.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">RANSAC</text>
+<text x="527.0" y="95.0" text-anchor="middle" font-size="12.5" fill="#9198a1">random 4-point DLT</text>
+<text x="527.0" y="114.0" text-anchor="middle" font-size="12.5" fill="#9198a1">inliers: error &lt; 5 px</text>
+<rect x="648" y="46" width="178" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="648" y="56" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="739.0" y="76.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">Refit</text>
+<text x="739.0" y="95.0" text-anchor="middle" font-size="12.5" fill="#9198a1">DLT on the best</text>
+<text x="739.0" y="114.0" text-anchor="middle" font-size="12.5" fill="#9198a1">inlier set</text>
+<rect x="860" y="46" width="178" height="86" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<rect x="860" y="56" width="4" height="66" rx="2" fill="#58a6ff"/>
+<text x="951.0" y="85.0" text-anchor="middle" font-size="14.5" font-weight="600" fill="#e6edf3">De-normalise</text>
+<text x="951.0" y="104.0" text-anchor="middle" font-size="12.5" fill="#9198a1">H = T1^-1 H~ T2</text>
+</svg>

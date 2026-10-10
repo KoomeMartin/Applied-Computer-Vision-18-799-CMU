@@ -16,16 +16,12 @@
 
 ## Architecture and shapes
 
-```mermaid
-flowchart LR
-    A["Image<br/>(B, 3, 224, 224)"] --> B["Split into 16x16 patches<br/>(B, 196, 768)"]
-    B --> C["Linear patch embedding<br/>(B, 196, 768)"]
-    C --> D["Prepend CLS token<br/>(B, 197, 768)"]
-    D --> E["+ learned positional<br/>embeddings"]
-    E --> F["Encoder block x6<br/>Pre-LN MHSA + FFN"]
-    F --> G["CLS output<br/>(B, 768)"]
-    G --> H["MLP head + softmax<br/>(B, 2)"]
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/vit_pipeline-dark.svg">
+    <img src="assets/vit_pipeline.svg" alt="ViT forward pass with tensor shapes" width="100%">
+  </picture>
+</p>
 
 | Step | Implementation | Shape |
 |---|---|---|
